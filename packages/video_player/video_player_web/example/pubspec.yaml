@@ -3,12 +3,16 @@ publish_to: none
 
 environment:
   sdk: ^3.3.0
-  flutter: ">=3.19.0"
+  flutter: '>=3.19.0'
 
 dependencies:
   flutter:
     sdk: flutter
-  video_player_platform_interface: ^6.1.0
+  video_player_platform_interface:
+    git:
+      url: git@github.com:kim-company/packages.git
+      path: packages/video_player/video_player_platform_interface
+      ref: video-player-pip
   video_player_web:
     path: ../
   web: ^0.5.1
